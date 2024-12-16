@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_cappuccino"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#855e53"
+        android:gravity="center"
+        android:padding="56dp"
+        android:text="Cappuccino"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_time"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_time"
+        app:layout_constraintBottom_toTopOf="@id/text_minutes"
+        app:layout_constraintEnd_toStartOf="@id/image_favorite"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_cappuccino" />
+
+    <TextView
+        android:id="@+id/text_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 minutos"
+        android:textColor="#855e53"
+        app:layout_constraintEnd_toEndOf="@id/image_time"
+        app:layout_constraintStart_toStartOf="@id/image_time"
+        app:layout_constraintTop_toBottomOf="@id/image_time" />
+
+    <ImageView
+        android:id="@+id/image_favorite"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_time"
+        app:layout_constraintTop_toBottomOf="@id/text_cappuccino" />
+
+
+    <TextView
+        android:id="@+id/text_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="54214"
+        android:textColor="#855e53"
+        app:layout_constraintEnd_toEndOf="@id/image_favorite"
+        app:layout_constraintStart_toStartOf="@id/image_favorite"
+        app:layout_constraintTop_toBottomOf="@id/image_favorite" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_margin="16dp"
+        android:background="#855e53"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_number" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="Uma simples e perfeitamente..."
+        android:textColor="#855e53"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_divider" />
+
+    <TextView
+        android:id="@+id/text_ingredient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Ingredientes"
+        android:textColor="#855e53"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_description" />
+
+    <ImageView
+        android:id="@+id/chevron_expresso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_ingredient" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1 dose espresso"
+        android:textColor="#855e53"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/chevron_expresso"
+        app:layout_constraintStart_toEndOf="@id/chevron_expresso"
+        app:layout_constraintTop_toTopOf="@id/chevron_expresso" />
+
+    <ImageView
+        android:id="@+id/chevron_milk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chevron_expresso" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="100ml de leite"
+        android:textColor="#855e53"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/chevron_milk"
+        app:layout_constraintStart_toEndOf="@id/chevron_milk"
+        app:layout_constraintTop_toTopOf="@id/chevron_milk" />
+
+    <ImageView
+        android:id="@+id/chevron_chocolate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chevron_milk" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1 colher de chocolate em pó"
+        android:textColor="#855e53"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/chevron_chocolate"
+        app:layout_constraintStart_toEndOf="@id/chevron_chocolate"
+        app:layout_constraintTop_toTopOf="@id/chevron_chocolate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
